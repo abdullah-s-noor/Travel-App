@@ -26,6 +26,8 @@ APIs Integrated:
 Geonames API: Provides city coordinates (latitude and longitude) based on user input.
 Weatherbit API: Fetches current or forecasted weather based on the city and selected trip date.
 Pixabay API: Retrieves images of the destination city, adding a visual aspect to the travel information.
+⚠️ Note: This project used free API keys which may now require a paid subscription. You can replace the keys or mock the data for testing.
+
 ### dependencies
 axios: A promise-based HTTP client for making requests, often used to interact with APIs.
 clean-webpack-plugin: A Webpack plugin that cleans up the output directory before each build to remove old or unused files.
