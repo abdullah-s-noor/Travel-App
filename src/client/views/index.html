@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Travel App</h1>
+  </header>
+  <section>
+      <form onsubmit="return Client.handleSubmit(event)" method="POST" id="trip-form">
+          <div class="city-inp">
+              <label for="destination">Enter Destination:</label>
+              <input class="inp" type="text" id="city" name="city" placeholder="Enter city name" >
+          </div>
+          <div class="date-inp">
+              <label for="date">Departure Date:</label>
+              <input class="inp" type="date" id="date" name="date" >
+          </div>
+          <div class="submit-btn">
+              <button type="submit" id="submit">submit</button>
+          </div>
+
+          <div id="trip_info">
+              
+          </div>
+      </form>
+  </section>
+  <footer>@abdullah</footer>
+
+  </div>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
+    </body>
+</html>
